@@ -1,12 +1,17 @@
-import HomePage from '@/app/(delete-this-and-modify-page.tsx)/HomePage';
+import React from 'react';
 
-/**
- * The main page component that renders the HomePage component.
- *
- * @returns {JSX.Element} The rendered HomePage component.
- */
-const Page = () => {
-    return <HomePage />;
+import Main from '@/components/Main';
+import Navbar from '@/components/common/Navbar';
+import Footer from '@/components/sections/Footer';
+
+const page = () => {
+    return (
+        <div>
+            <Navbar />
+            <Main />
+            <Footer />
+        </div>
+    );
 };
 
-export default Page;
+export default page;
