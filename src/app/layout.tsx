@@ -5,6 +5,7 @@ import type { Metadata } from 'next';
 import { ThemeProvider } from 'next-themes';
 
 import '@/app/globals.css';
+import Navbar from '@/components/common/Navbar';
 import { TanStackQueryProvider } from '@/providers/TanStackQueryProvider';
 
 import { inter, poppins } from './fonts/fonts';
@@ -19,7 +20,10 @@ const Layout = ({ children }: Readonly<{ children: ReactNode }>) => {
         <html suppressHydrationWarning lang='en'>
             <body className={`${poppins.variable} ${inter.variable} bg-background text-foreground antialiased`}>
                 <TanStackQueryProvider>
-                    <ThemeProvider attribute='class'>{children}</ThemeProvider>
+                    <ThemeProvider attribute='class'>
+                        <Navbar />
+                        {children}
+                    </ThemeProvider>
                 </TanStackQueryProvider>
             </body>
         </html>

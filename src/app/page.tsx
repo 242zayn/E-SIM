@@ -7,7 +7,7 @@ import Footer from '@/components/sections/Footer';
 const page = () => {
     return (
         <div>
-            <Navbar />
+            
             <Main />
             <Footer />
         </div>

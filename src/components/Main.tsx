@@ -1,7 +1,6 @@
 import React from 'react';
 
 import FAQ from './sections/FAQ';
-import Footer from './sections/Footer';
 import Hero from './sections/Hero';
 import TravelDestinationTabs from './sections/TravelDestinationTabs';
 import WhatIsEsim from './sections/WhatIsEsim';
@@ -15,7 +14,6 @@ const Main = () => {
             <TravelDestinationTabs />
             <WhyChoose />
             <FAQ />
-           
         </div>
     );
 };
